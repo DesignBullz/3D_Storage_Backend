@@ -192,10 +192,10 @@ app.post(
     const uniqueFileNumber = generateUniqueFileNumber(); // Generate a unique file number
 
     const fileUrl1 = req.files.file1
-      ? `http://srv645874.hstgr.cloud/uploads/${req.files.file1[0].filename}`
+      ? `http://srv645874.hstgr.cloud:8080/uploads/${req.files.file1[0].filename}`
       : null;
     const fileUrl2 = req.files.file2
-      ? `http://srv645874.hstgr.cloud/uploads/${req.files.file2[0].filename}`
+      ? `http://srv645874.hstgr.cloud:8080/uploads/${req.files.file2[0].filename}`
       : null;
 
     const query =
@@ -357,10 +357,10 @@ app.put(
 
     // Check if new files are uploaded and generate file URLs
     const fileUrl1 = req.files.file1
-      ? `http://srv645874.hstgr.cloud/uploads/${req.files.file1[0].filename}`
+      ? `http://srv645874.hstgr.cloud:8080/uploads/${req.files.file1[0].filename}`
       : null;
     const fileUrl2 = req.files.file2
-      ? `http://srv645874.hstgr.cloud/uploads/${req.files.file2[0].filename}`
+      ? `http://srv645874.hstgr.cloud:8080/uploads/${req.files.file2[0].filename}`
       : null;
 
     // First, check if the record exists
