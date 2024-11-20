@@ -341,7 +341,7 @@ app.get("/industries", (req, res) => {
     res.status(200).json({ industries });
   });
 });
-
+// update route
 // PUT route to edit an existing upload entry
 app.put(
   "/uploads/:fileNumber",
